@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script type="text/javascript" src="./JAVA SCRIPT/myscript.js"></script>
+</head>
+<body style="background-image:url(./HTML/MEDIA/IMAGE/pexels-fotios-photos-2895148.jpg);">
+    <div class="box">
+            <div class="overlap">
+                <img src="./HTML/MEDIA/IMAGE/login.png" alt="loginlogo">
+            </div>
+        <h1>LOGIN</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="UserName is Antoni" required id="user"><p id="para"></p><i class='bx bxs-user'></i></div>            
+        <div class="inputbox">
+            <input type="password" placeholder="Password is Antoni@123" required id="pass"><i class='bx bxs-lock'></i></div>
+        <div class="forgot">
+            <label><input onclick="showpass()" type="checkbox">Show Password</label>
+            <a href="./HTML/forgotpass.html" style="color: white;">Forgot Password?</a>
+        </div>
+            <button onclick="lhg()" class="button1">Login</button>
+        <p align="center">Don't have Account? <a href="./HTML/signup.html" style="color:whitesmoke;">SignUp</a></p>
+    </div>
+</body>
+</html>

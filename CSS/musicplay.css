@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111222;
+    padding: 40px;
+}
+.top-poster{
+    display: flex;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5cm;
+    padding: 2rem 9%;
+    background: rgb(96, 116, 118);    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+    box-sizing: border-box;
+    color: white;
+}
+.content{
+    display: flex;
+    border-radius: 35px;
+    margin-left: 15cm;
+    margin-top: 4cm;
+    height: auto;
+    width: auto;
+    padding: 30px;
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(20px) ;
+    position: absolute;
+}
+.content ul li{
+    color: white;
+    list-style: none;
+    font-size: 40px;
+}
+.content ul li h4{
+    color:wheat;
+    font-size: 50px ;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.post{
+    margin-top: 2cm;
+    border-radius: 15px;
+    width: 600px;
+    height: 600px;
+}
+.image img{
+    height:70px;
+    width: 100%;
+}
+.audio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.audio audio{
+    width: 40cm;
+    margin-top: 1cm;
+    background-color: gray ;
+    border: none;
+    border-radius: 15px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: gray;
+    border: none;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: lightblue;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: #333;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: #333;
+}
+audio::-webkit-media-controls-timeline{
+    border-radius: 40px;
+    background-color: lightblue;
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: lightblue;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: lightblue;
+    border-radius: 50%;
+}
+fieldset{
+    margin-top: 2cm;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: yellowgreen;
+}
+fieldset legend{
+    font-size: 50px;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .content{
+        display: flex;
+        border-radius: 35px;
+        margin-left: 5cm;
+        margin-top: 3cm;
+        height: 6cm;
+        width: 8cm;
+        padding: 20px;
+        background-color: rgba(225, 225, 225, 0.1);
+        backdrop-filter: blur(20px) ;
+        position: absolute;
+    }
+    .content ul li{
+        color: white;
+        list-style: none;
+        font-size: 14px;
+    }
+    .content ul li h4{
+        color:wheat;
+        font-size: 18px ;
+    }
+    .header a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .post{
+        margin-top: 2cm;
+        border-radius: 15px;
+        width: 250px;
+        height: 250px;
+    }
+    .audio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1cm;
+    }
+    .audio audio{
+        width: 13cm;
+        margin-top: 1cm;
+        background-color: gray ;
+        border: none;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    fieldset{
+        margin-top: 1cm;
+        padding: 5px;
+        border-radius: 20px;
+        border-color: yellowgreen;
+    }
+    fieldset legend{
+        font-size: 30px;
+        color: white;
+    }
+}
+@media screen and (max-width:400px) {
+    .content{
+        display: flex;
+        border-radius: 35px;
+        margin-left: 5cm;
+        margin-top: 3cm;
+        height: 6cm;
+        width: 8cm;
+        padding: 20px;
+        background-color: rgba(225, 225, 225, 0.1);
+        backdrop-filter: blur(20px) ;
+        position: absolute;
+    }
+    .content ul li{
+        color: white;
+        list-style: none;
+        font-size: 14px;
+    }
+    .content ul li h4{
+        color:wheat;
+        font-size: 18px ;
+    }
+    .header a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .post{
+        margin-top: 2cm;
+        border-radius: 15px;
+        width: 250px;
+        height: 250px;
+    }
+    .audio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1cm;
+    }
+    .audio audio{
+        width: 10cm;
+        margin-top: 1cm;
+        background-color: gray ;
+        border: none;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    fieldset{
+        margin-left: 6cm;
+        margin-top: 1cm;
+        padding: 5px;
+        border-radius: 20px;
+        border-color: yellowgreen;
+    }
+    fieldset legend{
+        font-size: 30px;
+        color: white;
+    }
+}

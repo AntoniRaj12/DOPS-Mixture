@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+main{
+    background-image: url(../HTML/MEDIA/IMAGE/apa\ iya\ 16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #292b2c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#but{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 3cm;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+            color: #f39c12;
+            border: 2px solid rgb(105, 5, 218);
+            border-radius: 25px;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            padding: 5px 5px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 5cm;
+            transform: scale(1.3);
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 65px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+#movies {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #292b2c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+}

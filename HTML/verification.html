@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script>
+        // OTP verfication
+
+var generate=Math.floor(Math.random()*999999)
+        alert(generate)
+        var error="Incorrect otp"
+        function otpverfication(){
+            var userotp=document.getElementById("userotp").value
+            if(generate==userotp){
+                window.location.href="../index.html"
+            }else{
+                alert(error)
+            }
+        }
+        function resendotp(){
+            window.location.href="../HTML/verification.html"
+        }
+    </script>
+</head>
+<body style="background-image: url(./MEDIA/IMAGE/verificationback.jpg);">
+    <header class="header">
+        <div class="image">
+            <img src="./MEDIA/LOGO/DOPS__2.png" alt="logo" height="70px"></div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" id="but">Home</a></li>
+                </ul>
+            </nav> 
+    </header>
+    <div class="box" id="box-2">
+        <div class="overlap">
+            <img src="./MEDIA/IMAGE/verify.png" alt="forgotlogo">
+        </div>
+        <h1 id="for">OTP Verification</h1>
+        <p style="text-align:center; color: black;">Enter Correct OTP</p>
+            <div class="inputbox">
+                <input id="userotp" type="text" placeholder="Enter OTP" required><i class='bx bxs-mobile' style="color: rgba(0, 0, 0, 0.522);"></i></div>
+                <button class="but1" onclick="otpverfication()">Verify</button>
+                <button class="but2" onclick="resendotp()">Resend OTP</button>
+    </form>
+    </div>
+</body>
+</html>

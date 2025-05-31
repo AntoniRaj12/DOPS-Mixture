@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#for{
+    color: rgb(51, 84, 100);
+    text-align: center;
+}
+p{
+    margin-bottom: 0.5cm;
+}
+.header{
+    background-color: rgba(1, 5, 32, 0.5);
+    display: flex;
+    justify-content: space-between;
+    width: 70cm;
+}
+.box h1{
+    font-family:'techno';
+    text-align: center;
+    padding: 35px;
+}
+.box .forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14;
+    color: #fff;
+}
+.box {
+    display: flex;
+    border: 2px solid white;
+    margin-top: 6cm;
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 0 20px 15px rgba(115, 127, 196, 0.5);
+    text-shadow: 0 20px 15px rgba(59, 33, 33, 0.5);
+    color: #fff;
+    backdrop-filter: blur(8px);
+    width: 10cm;
+    height: auto;
+    padding: 40px;
+    flex-direction: column;
+}
+#but{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 90px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-top: .3cm;
+    margin-right: 1cm;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+            color: #f39c12;
+            border: 2px solid rgb(105, 5, 218);
+            border-radius: 15px;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            padding: 5px 5px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 90px;
+            transform: scale(1.2);
+}
+
+.box img{
+    width: 50%;
+    margin-top: -140px;
+    margin-left: 2.7cm;
+}
+
+.inputbox i{
+    position: absolute;
+    right:1.2cm;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 20px;
+}
+.inputbox input{
+    width:70%;
+    height: 1%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    margin-left: .5cm;
+    padding: 20px 45px 20px 20px;
+}
+input::placeholder{
+    color:black;
+}
+
+.box .inputbox{
+    width: 100%;
+    height: 50px;
+    margin: 4px 5px;
+    position: relative;
+}
+.button1{
+        cursor: pointer;
+        border-radius: 25px;
+        color: black;
+        border: #fff;
+        background-color:rgba(249, 245, 251, 0.868);
+        box-shadow: 0 20px 15px rgba(1, 5, 32, 0.5);;
+        font-size:0.6cm;
+        margin: 20px 36px;
+        text-align: center;
+        width: 80%;
+        height: 0.8cm;
+}
+.header .image img{
+    margin-left: 1cm;
+}
+.button1:active{
+    background-color: black;
+    color: white;
+}
+.inputbox input:focus{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.image {
+    display: flex;
+}
+.imageflex{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:1cm;
+        text-align: center;
+        margin-left:6px;
+        margin-top:0cm;
+}
+@media screen and (max-width:600px){
+    .box{
+        width: 8cm;
+    }
+    .inputbox input{
+        width:60%;
+        height: 1%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: black;
+        padding: 20px 45px 20px 20px;
+    }
+    .box img{
+        width: 50%;
+        margin-top: -140px;
+        margin-left: 2.2cm;
+    }
+    .button1{
+        margin: 25px 55px;
+        width: 60%;
+        height: 0.8cm;
+    }
+}
+
+@media screen and (max-width:350px){
+    .box h1{
+        font-family:'techno';
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #for{
+        color: rgb(51, 84, 100);
+        text-align: center;
+    }
+    p{
+        margin-bottom: 0.5cm;
+    }
+    .but1{
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    border: #fff;
+    background-color:rgba(249, 245, 251, 0.868);
+    box-shadow: 0 20px 15px rgba(1, 5, 32, 0.5);;
+    font-size:0.5cm;
+    margin: 20px 36px;
+    text-align: center;
+    width: 40%;
+    height: 0.8cm;
+}
+.but2{
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    border: #fff;
+    background-color:rgba(249, 245, 251, 0.868);
+    box-shadow: 0 20px 15px rgba(1, 5, 32, 0.5);;
+    font-size:0.5cm;
+    margin-left:5.5cm;
+    margin-top: -0.1cm;
+    transform: translateY(-149%);
+    text-align: center;
+    width: 40%;
+    height: 0.8cm;
+}
+    nav ul li {
+        margin-top: .5cm;
+        margin-right: .2cm;
+        font-size: 15px;
+    }
+    .header .image img{
+        height: 50px;
+        margin-left: .2cm;
+    }
+    .box .forgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #fff;
+    }
+    #box-2{
+        margin-top: 4cm;
+        width: 6cm;
+        height: 5.5cm;
+    }
+    #box-3{
+        margin-top: 4cm;
+        width: 6cm;
+        height: 11cm;
+    }
+    .box {
+        display: flex;
+        border: 2px solid white;
+        margin-top: 3cm;
+        position: absolute;
+        border-radius: 30px;
+        box-shadow: 0 20px 15px rgba(115, 127, 196, 0.5);
+        text-shadow: 0 20px 15px rgba(59, 33, 33, 0.5);
+        color: #fff;
+        backdrop-filter: blur(8px);
+        width: 6cm;
+        height: 7cm;
+        padding: 40px;
+        flex-direction: column;
+    }
+    #but{
+        color: rgb(255, 254, 254);
+        text-align: center;
+        padding: 5px 5px;
+        display: inline-block;
+        cursor: pointer;
+        width: 90px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+        box-sizing: border-box;
+    }
+    
+    nav ul li a:hover {
+                color: #f39c12;
+                border: 2px solid rgb(105, 5, 218);
+                border-radius: 15px;
+                color: rgb(255, 254, 254);
+                text-align: center;
+                padding: 5px 5px;
+                display: inline-block;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 90px;
+                transform: scale(1.2);
+    }
+    
+    .box img{
+        width: 50%;
+        margin-top: -140px;
+        margin-left: 1.72cm;
+    }
+    
+    .inputbox i{
+        position: absolute;
+        right:-.001cm;   
+        top: 50%;
+        transform: translateY(-70%);
+        font-size: 18px;
+    }
+    .inputbox input{
+        width:85%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: black;
+        margin-left: -.5cm;
+        padding: 20px 45px 20px 20px;
+    }
+    input::placeholder{
+        color:black;
+        font-size: 15px;
+    }
+    
+    .box .inputbox{
+        width: 100%;
+        height: 50px;
+        margin: 4px 5px;
+        position: relative;
+    }
+    .button1{
+            cursor: pointer;
+            border-radius: 25px;
+            color: black;
+            border: #fff;
+            background-color:rgba(249, 245, 251, 0.868);
+            box-shadow: 0 20px 15px rgba(1, 5, 32, 0.5);;
+            font-size:20px;
+            margin: 20px 36px;
+            text-align: center;
+            width: 70%;
+            height: 0.8cm;
+    }
+    .button1:active{
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .image {
+        display: flex;
+    }
+    .imageflex{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:1cm;
+            text-align: center;
+            margin-left:6px;
+            margin-top:0cm;
+    }
+}
