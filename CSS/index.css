@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow-x : clip;
 }
 main{
     background-image: url(../HTML/MEDIA/IMAGE/apa\ iya\ 16.jpg);
